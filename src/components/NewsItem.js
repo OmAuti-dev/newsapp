@@ -1,9 +1,8 @@
-import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export class NewsItem extends Component {
-  render() {
-    let { title, description, imageUrl, newsUrl, author, date, source } = this.props;
+const NewsItem = (props) => {
+  
+    let { title, description, imageUrl, newsUrl, author, date, source } = props;
     return (
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         
@@ -56,6 +55,6 @@ export class NewsItem extends Component {
 
     );
   }
-}
+
 
 export default NewsItem;

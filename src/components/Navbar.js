@@ -2,12 +2,13 @@ import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
 
-export class Navbar extends Component {
+const Navbar = () => {
   
 
-  render() {
+ 
     return (
-      <nav className="bg-gray-800">
+      
+      <nav className=" sticky top-0 bg-gray-800 ">
         <div className=" max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 justify-center items-center ">
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -83,8 +84,9 @@ export class Navbar extends Component {
 
         
       </nav>
+      
     );
   }
-}
+
 
 export default Navbar;

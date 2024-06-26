@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { InfinitySpin } from "react-loader-spinner";
 
- export class Spinner extends Component {
-  render() {
+const Spinner = () => {
+  
     return (
       <div>
         <InfinitySpin
@@ -15,6 +15,6 @@ import { InfinitySpin } from "react-loader-spinner";
       </div>
     );
   }
-}
+
 
 export default Spinner;
